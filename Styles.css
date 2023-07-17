@@ -1,0 +1,57 @@
+/* Importation de la police "Outfit" depuis Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+/* Styles pour le corps de la page */
+body {
+    font-family: 'Outfit', sans-serif; /* Utilisation de la police "Outfit" avec une alternative sans-serif */
+    background : radial-gradient(circle at center,  hsl(220, 15%, 75%), hsl(220, 15%, 45%)); /* dégradé de couleur comme background */
+    display: flex; /* Utilisation de la disposition flex */
+    flex-direction: column; /* Alignement vertical des éléments */
+    justify-content: center; /* Centrage vertical des éléments */
+    align-items: center; /* Centrage horizontal des éléments */
+    height: 100vh; /* Hauteur égale à la taille de la fenêtre visible */
+    overflow-y: hidden; /* Masquer la barre de défilement verticale */
+}
+
+/* Styles pour la div .tile */
+.tile {
+    background-color: aliceblue; /* Couleur de fond */
+    border-radius: 5%; /* Arrondi des coins */
+    min-width: 150px; /* Largeur minimale */
+    max-width: 450px; /* Largeur maximale */
+    margin: 0 auto; /* Centrage horizontal */
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.2); /*Ajouter ombre*/
+}
+
+/* Styles pour la div .qrcode */
+.tile .qrcode {
+    padding: 5% 5% 0%; /* Haut, Droite/Gauche, Bas */
+}
+
+/* Styles pour la div .text */
+.tile .text {
+    padding: 0% 5% 5%; /* Haut, Droite/Gauche, Bas */
+
+}
+
+/* Styles pour l'image à l'intérieur de .qrcode */
+.tile .qrcode img {
+    max-width: 100%; /* Largeur maximale de l'image */
+    height: auto; /* Hauteur automatique pour conserver les proportions */
+    border-radius: 5%; /* Arrondi des coins */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6); /*Ajouter ombre*/
+
+}
+
+/* Styles pour le titre à l'intérieur de .text */
+.tile .text h1 {
+    text-align: center; /* Alignement centré */
+    font-size: 24px; /* Taille de police */
+}
+
+/* Styles pour le paragraphe à l'intérieur de .text */
+.tile .text p {
+    color: grey; /* Couleur du texte */
+    text-align: center; /* Alignement centré */
+    font-size: 15px; /* Taille de police */
+}
